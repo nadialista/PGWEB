@@ -1,0 +1,8 @@
+/*Memanggil File GeoJSON Point 01*/
+var wfsgeoserver1 = L.geoJson(null,{
+ pointToLayer: function (feature,latlng){
+  return L.marker(latlng,{
+   icon: L.icon({
+    iconUrl: "assets/img/marker/fas_rumahsakit_rujukan.png",//URL icon marker
+	iconSize:[32, 32], //ukuran icon marker
+	
